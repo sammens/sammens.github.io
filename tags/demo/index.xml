@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo on Feryal Behbahani</title>
+    <link>https://feryal.github.io/tags/demo/</link>
+    <description>Recent content in Demo on Feryal Behbahani</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Feryal Behbahani</copyright>
+    <lastBuildDate>Mon, 26 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/demo/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning from Demonstration: Applications and challenges</title>
+      <link>https://feryal.github.io/talk/oxford/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/talk/oxford/</guid>
+      <description>&lt;p&gt;Recent advances in deep reinforcement learning have enabled a wide range of capabilities, from learning to play video games to acquiring robotic visuomotor skills. However, there are a wide range of problems where hand-coding behaviour or a reward function is impractical. Learning from demonstration (LfD) serves as an essential tool for learning skills that are difficult to program by hand. These demonstrations provide snapshots of near-optimal behaviours, offering guidance for the learning process and alleviating the need to start from scratch or manually engineering parts of the solution. However, it is often unclear how to acquire these in non-controlled settings, and the new challenges that arise when trying to apply these techniques in the real world.&lt;/p&gt;
+
+&lt;p&gt;In this talk, I will present some of the recent techniques that can help us bridge that gap and learn realistic behaviours from a large source of untapped data already existing “in the wild”. I will cover some of the latest LfD approaches that leverage recent advances in deep learning and generative adversarial methods. I will present our recent work, video to behaviour (ViBe), which can extract realistic behaviours from raw unlabelled video data, without additional expert knowledge. We can automatically extract trajectories and use them to perform LfD through a novel curriculum and cope with multiple agents interacting in complex settings. I will finish with a discussion of open questions and future research directions required to extend these approaches further.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Learning from Demonstration in the Wild</title>
+      <link>https://feryal.github.io/project/vibe/</link>
+      <pubDate>Sat, 25 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/project/vibe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Curriculum Learning for Reinforcement Learning</title>
+      <link>https://feryal.github.io/project/acl/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/project/acl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Craft Environment</title>
+      <link>https://feryal.github.io/project/craftenv/</link>
+      <pubDate>Wed, 15 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/project/craftenv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>What Would it Take to Train an Agent to Play with a Shape-Sorter?</title>
+      <link>https://feryal.github.io/talk/rework/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/talk/rework/</guid>
+      <description>&lt;p&gt;The capabilities of humans to precisely and robustly recognise and manipulate objects has been instrumental in the development of human cognition. However, understanding and replicating this process has proven to be difficult. This is of particular importance when thinking of agents or robots acting in naturalistic environments, solving complex tasks. I will present recent work in this direction, focusing on computational optimality and Deep Reinforcement Learning techniques, to discover how to manipulate objects within a 3D physics simulator from high-dimensional sensory observations.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>End-to-end control: A3C-MuJoCo</title>
+      <link>https://feryal.github.io/project/jaco/</link>
+      <pubDate>Sat, 15 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/project/jaco/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

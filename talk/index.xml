@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recent &amp; Upcoming Talks on Feryal Behbahani</title>
+    <link>https://feryal.github.io/talk/</link>
+    <description>Recent content in Recent &amp; Upcoming Talks on Feryal Behbahani</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Feryal Behbahani</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning from Demonstration: Applications and challenges</title>
+      <link>https://feryal.github.io/talk/oxford/</link>
+      <pubDate>Mon, 26 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/talk/oxford/</guid>
+      <description>&lt;p&gt;Recent advances in deep reinforcement learning have enabled a wide range of capabilities, from learning to play video games to acquiring robotic visuomotor skills. However, there are a wide range of problems where hand-coding behaviour or a reward function is impractical. Learning from demonstration (LfD) serves as an essential tool for learning skills that are difficult to program by hand. These demonstrations provide snapshots of near-optimal behaviours, offering guidance for the learning process and alleviating the need to start from scratch or manually engineering parts of the solution. However, it is often unclear how to acquire these in non-controlled settings, and the new challenges that arise when trying to apply these techniques in the real world.&lt;/p&gt;
+
+&lt;p&gt;In this talk, I will present some of the recent techniques that can help us bridge that gap and learn realistic behaviours from a large source of untapped data already existing “in the wild”. I will cover some of the latest LfD approaches that leverage recent advances in deep learning and generative adversarial methods. I will present our recent work, video to behaviour (ViBe), which can extract realistic behaviours from raw unlabelled video data, without additional expert knowledge. We can automatically extract trajectories and use them to perform LfD through a novel curriculum and cope with multiple agents interacting in complex settings. I will finish with a discussion of open questions and future research directions required to extend these approaches further.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Automated Curriculum Learning for Reinforcement Learning</title>
+      <link>https://feryal.github.io/talk/jeju/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/talk/jeju/</guid>
+      <description>
+
+&lt;h2 id=&#34;how-would-you-make-an-agent-capable-of-solving-the-complex-hierarchical-tasks&#34;&gt;How would you make an agent capable of solving the complex hierarchical tasks?&lt;/h2&gt;
+
+&lt;p&gt;Imagine a problem that is complex and requires a collection of skills, which are extremely hard to learn in one go with sparse rewards (e.g. solving complex object manipulation in robotics). Hence, one might need to learn to generate a curriculum of simpler tasks, so that overall a student network can learn to perform a complex task efficiently. Designing this curriculum by hand is inefficient. In this project, I set out to train an automatic curriculum generator using a Teacher network which keeps track of the progress of the student network, and proposes new tasks as a function of how well the student is learning. I adapted an state-of-the-art distributed reinforcement learning algorithm, for training the student network, while using an adversarial multi-armed bandit algorithm, for teacher network. I also developed an environment, Craft Env, with possibility of hierarchical task design with a range of complexity that is fast to iterate through. I analysed how using different metrics for quantifying student progress affect the curriculum that the teacher learns to propose and demonstrate that this approach can accelerate learning and interpretability of how the agent is learning to perform complex tasks. In order to start, I adapted the Craft Environment from work by Andreas et al.,[1] as it has a nice simple structure with possibility of hierarchical task design with a range of complexity that is fast to iterate through. I have developed a fixed curriculum of simpler target sub-tasks (in craft environment: &amp;ldquo;get wood&amp;rdquo; &amp;ldquo;get grass&amp;rdquo; &amp;ldquo;get iron&amp;rdquo; &amp;ldquo;make cloth&amp;rdquo; &amp;ldquo;get gold&amp;rdquo;), and in the future will make a teacher network who proposes tasks for the student to learn. I could also kick-start the student with demonstrations from an expert.&lt;/p&gt;
+
+&lt;p&gt;I have interfaced IMPALA[2], a GPU utilised version of A3C architecture which uses multiple distributed actors with V-Trace off-policy correction, with my Craft Environment to train on all the possible Craft tasks concurrently. This is possible by providing the hash of the task name as instruction to the network (similar setup to DMLab IMPALA, using an LSTM to process the instruction).&lt;/p&gt;
+
+&lt;p&gt;I have interfaced IMPALA[2], a GPU utilised version of A3C architecture which uses multiple distributed actors with V-Trace off-policy correction, with my Craft Environment to train on all the possible Craft tasks concurrently. This is possible by providing the hash of the task name as instruction to the network (similar setup to DMLab IMPALA, using an LSTM to process the instruction).&lt;/p&gt;
+
+&lt;p&gt;Other papers that I am inspired by in this work include [3], [4].&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;[1] &lt;a href=&#34;https://arxiv.org/abs/1611.01796&#34;&gt;Modular Multitask Reinforcement Learning with Policy Sketches&lt;/a&gt; (Andreas et al., 2016)&lt;/p&gt;
+
+&lt;p&gt;[2] &lt;a href=&#34;https://arxiv.org/abs/1704.03003&#34;&gt;Automated Curriculum Learning for Neural Networks&lt;/a&gt; (Graves et al., 2017)&lt;/p&gt;
+
+&lt;p&gt;[3] &lt;a href=&#34;https://arxiv.org/abs/1802.10567&#34;&gt;Learning by Playing-Solving Sparse Reward Tasks from Scratch&lt;/a&gt; (Reidmiller et al., 2018)&lt;/p&gt;
+
+&lt;p&gt;[4] &lt;a href=&#34;https://arxiv.org/abs/1602.01783&#34;&gt;POWERPLAY: Training an Increasingly General Problem Solver by Continually Searching for the Simplest Still Unsolvable Problem&lt;/a&gt; (Schmidhuber, 2011)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What Would it Take to Train an Agent to Play with a Shape-Sorter?</title>
+      <link>https://feryal.github.io/talk/rework/</link>
+      <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://feryal.github.io/talk/rework/</guid>
+      <description>&lt;p&gt;The capabilities of humans to precisely and robustly recognise and manipulate objects has been instrumental in the development of human cognition. However, understanding and replicating this process has proven to be difficult. This is of particular importance when thinking of agents or robots acting in naturalistic environments, solving complex tasks. I will present recent work in this direction, focusing on computational optimality and Deep Reinforcement Learning techniques, to discover how to manipulate objects within a 3D physics simulator from high-dimensional sensory observations.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
